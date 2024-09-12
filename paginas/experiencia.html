@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencias</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/imagens/icone-curriculos.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <audio id="background-music" loop>
+        <source src="/audios/success-celebration.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <!-- Controles de áudio -->
+    <div class="audio-controls">
+        <button id="play-pause" onclick="togglePlayPause()">Play</button>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        <label for="volume" id="volume">Volume</label>
+    </div>
+
+    <header>
+        <img src="/imagens/ronaldo_junior.jpg" alt="Ronaldo José da Silva Junior" class="perfil-foto">
+        <h1>Ronaldo José da Silva Junior</h1>
+        <p>Engenheiro de Computação | Data Science | Desenvolvimento de Software</p>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="menu">
+            <li><a href="/paginas/home.html">Home</a></li>
+            <li><a href="/paginas/experiencia.html">Experiência</a></li>
+            <li><a href="/paginas/educacao.html">Educação</a></li>
+            <li><a href="/paginas/habilidades.html">Habilidades</a></li>
+            <li><a href="/paginas/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="experiencia">
+        <h2>Experiência</h2>
+        <ul>
+            <li><strong>Estudante de Engenharia de Computação - UNIVESP</strong> (2020 - Presente)</li>
+            <li><strong>Analista de Dados - Projeto InsightGuard</strong> (2023)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ronaldo José da Silva Junior. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <span style="color: red;">&#10084;</span> por Ronaldo Junior</p>
+        <p>
+        <a href="https://github.com/Dev-RonaldoJunior" target="_blank"><img src="/imagens/github.png" alt="github"></a> 
+        <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank"><img src="/imagens/linkedin.png" alt="linkedin"></a>
+        </p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>

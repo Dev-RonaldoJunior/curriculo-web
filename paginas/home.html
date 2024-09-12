@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/imagens/icone-curriculos.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <audio id="background-music" loop>
+        <source src="/audios/success-celebration.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <!-- Controles de áudio -->
+    <div class="audio-controls">
+        <button id="play-pause" onclick="togglePlayPause()">Play</button>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        <label for="volume" id="volume">Volume</label>
+    </div>
+
+    <header>
+        <img src="/imagens/ronaldo_junior.jpg" alt="Ronaldo José da Silva Junior" class="perfil-foto">
+        <h1>Ronaldo José da Silva Junior</h1>
+        <p>Engenheiro de Computação | Data Science | Desenvolvimento de Software</p>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="menu">
+            <li><a href="/paginas/home.html">Home</a></li>
+            <li><a href="/paginas/experiencia.html">Experiência</a></li>
+            <li><a href="/paginas/educacao.html">Educação</a></li>
+            <li><a href="/paginas/habilidades.html">Habilidades</a></li>
+            <li><a href="/paginas/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section id="perfil">
+        <h2>Sobre mim</h2>
+    
+        <p>
+            💬 Tenho 31 anos e atualmente moro no Brasil. Estou no último ano da faculdade e minha intenção é conseguir um estágio na área para desenvolver minhas habilidades. Desde jovem sou apaixonado pelo mundo da tecnologia. Por um tempo, criei conteúdo em plataformas como YouTube e Twitch, o que me ajudou a desenvolver habilidades importantes como criatividade, comunicação, marketing, capacidade analítica, gestão de comunidades e gestão de mídias sociais.
+        </p>
+
+        <p>
+            ⚡ Gosto de ler, seja um bom livro, mangá ou quadrinhos, além de assistir filmes e jogar! Acredito que nossos interesses pessoais contribuem para uma percepção mais apurada das coisas e para a resolução de problemas.
+        </p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Ronaldo José da Silva Junior. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <span style="color: red;">&#10084;</span> por Ronaldo Junior</p>
+        <p>
+        <a href="https://github.com/Dev-RonaldoJunior" target="_blank"><img src="/imagens/github.png" alt="github"></a> 
+        <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank"><img src="/imagens/linkedin.png" alt="linkedin"></a>
+        </p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
