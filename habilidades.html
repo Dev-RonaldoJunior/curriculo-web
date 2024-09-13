@@ -6,27 +6,34 @@
     <title>Habilidades</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icone-curriculos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Áudio de fundo -->
     <audio id="background-music" loop>
         <source src="success-celebration.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+
     <!-- Controles de áudio -->
     <div class="audio-controls">
-        <button id="play-pause" onclick="togglePlayPause()">Play</button>
+        <i id="play-pause" class="fa fa-play" onclick="togglePlayPause()"></i>
         <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
-        <label for="volume" id="volume">Volume</label>
+        <label for="volume" id="volume-txt">Volume</label>
+        <label for="volume" id="volume-label">100%</label> <!-- Label para mostrar a porcentagem -->
     </div>
 
+
+    <!-- Cabeçalho -->
     <header>
         <img src="ronaldo_junior.jpg" alt="Ronaldo José da Silva Junior" class="perfil-foto">
         <h1>Ronaldo José da Silva Junior</h1>
         <p>Engenheiro de Computação | Data Science | Desenvolvimento de Software</p>
     </header>
 
+    <!-- Menu de navegação -->
     <nav>
         <div class="menu-toggle" id="menu-toggle">
             <span class="bar"></span>
@@ -42,54 +49,55 @@
         </ul>
     </nav>
 
+    <!-- Seção de Habilidades -->
     <section id="habilidades">
         <h2>Habilidades</h2>
         <ul>
+            <li><b>Linguagens de Programação</b></li>
+            <li><img src="icons-python.png" alt="Python"> <img src="icons-javascript.png" alt="JavaScript"></li>
+
+            <li><b>Linguagens de Marcação e Estilo</b></li>
+            <li><img src="icons-html-5.png" alt="HTML 5"> <img src="icons-css.png" alt="CSS 3"> <img src="icons-markdown.ico" alt="MarkDown"></li>
+
+            <li><b>Ferramentas</b></li>
             <li>
-                <p>
-                    <b>Linguagens de programação</b>
-                    <li><img src="icons-python.png" alt="Python"> <img src="icons-javascript.png" alt="JavaScript"></li>
-                </p>
+                <img src="icons-visual-studio-code.png" alt="VSCode"> 
+                <img src="icons-git.png" alt="Git"> 
+                <img src="icons-github.png" alt="GitHub"> 
+                <img src="icons-aws.png" alt="AWS"> 
+                <img src="icons-google-cloud.png" alt="Google Cloud"> 
+                <img src="icons-azure.png" alt="Azure"> 
+                <img src="icons-terraform.png" alt="Terraform"> 
+                <img src="icons-arduino.png" alt="Arduino">
             </li>
+
+            <li><b>Frameworks</b></li>
+            <li><img src="icons-django.png" alt="Django"> <img src="icons-node-js.png" alt="Node JS"> <img src="icons-react.png" alt="React"></li>
+
+            <li><b>Bancos de Dados</b></li>
+            <li><img src="icons-my-sql.png" alt="MySQL"> <img src="icons-SQLite.png" alt="SQLite"></li>
+
+            <li><b>Bibliotecas</b></li>
             <li>
-                <p>
-                    <b>Linguagens de marcação e estilo</b>
-                    <li><img src="icons-html-5.png" alt="HTML 5"> <img src="icons-css.png" alt="CSS 3"> <img src="icons-markdown.ico" alt="MarkDown"></li>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <b>Ferramentas</b>
-                    <li><img src="icons-visual-studio-code.png" alt="VSCode"> <img src="icons-git.png" alt="Git"> <img src="icons-github.png" alt="GitHub"> <img src="icons-aws.png" alt="AWS"> <img src="icons-google-cloud.png" alt="Google Cloud"> <img src="icons-azure.png" alt="Azure"> <img src="icons-terraform.png" alt="Terraform"> <img src="icons-arduino.png" alt="Arduino"></li>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <b>Frameworks</b>
-                    <li><img src="icons-django.png" alt="Django"> <img src="icons-node-js.png" alt="Node JS"> <img src="icons-react.png" alt="React"></li>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <b>Banco de dados</b>
-                    <li><img src="icons-my-sql.png" alt="My SQL"> <img src="icons-SQLite.png" alt="SQLite"></li>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <b>Bibliotecas</b>
-                    <li><img src="icons-numpy.png" alt="NumPy"> <img src="icons-pandas.png" alt="Pandas"> <img src="icons-seaborn.png" alt="Seaborn"> <img src="icons-matplotlib.png" alt="Matplotlib"></li>
-                </p>
+                <img src="icons-numpy.png" alt="NumPy"> 
+                <img src="icons-pandas.png" alt="Pandas"> 
+                <img src="icons-seaborn.png" alt="Seaborn"> 
+                <img src="icons-matplotlib.png" alt="Matplotlib">
             </li>
         </ul>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Ronaldo José da Silva Junior. Todos os direitos reservados.</p>
         <p>Desenvolvido com <span style="color: red;">&#10084;</span> por Ronaldo Junior</p>
         <p>
-        <a href="https://github.com/Dev-RonaldoJunior" target="_blank"><img src="github.png" alt="github"></a> 
-        <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Dev-RonaldoJunior" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
         </p>
     </footer>
 

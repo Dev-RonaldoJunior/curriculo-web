@@ -6,27 +6,33 @@
     <title>Educação</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icone-curriculos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Áudio de fundo -->
     <audio id="background-music" loop>
         <source src="success-celebration.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+
     <!-- Controles de áudio -->
     <div class="audio-controls">
-        <button id="play-pause" onclick="togglePlayPause()">Play</button>
+        <i id="play-pause" class="fa fa-play" onclick="togglePlayPause()"></i>
         <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
-        <label for="volume" id="volume">Volume</label>
+        <label for="volume" id="volume-txt">Volume</label>
+        <label for="volume" id="volume-label">100%</label> <!-- Label para mostrar a porcentagem -->
     </div>
 
+    <!-- Cabeçalho -->
     <header>
         <img src="ronaldo_junior.jpg" alt="Ronaldo José da Silva Junior" class="perfil-foto">
         <h1>Ronaldo José da Silva Junior</h1>
         <p>Engenheiro de Computação | Data Science | Desenvolvimento de Software</p>
     </header>
 
+    <!-- Menu de navegação -->
     <nav>
         <div class="menu-toggle" id="menu-toggle">
             <span class="bar"></span>
@@ -42,19 +48,44 @@
         </ul>
     </nav>
 
+    <!-- Seção de Educação -->
     <section id="educacao">
         <h2>Educação</h2>
         <ul>
-            <li><strong>Engenharia de Computação - UNIVESP</strong> (2020 - Presente)</li>
+            <li><strong>Faculdade</strong></li>
+            <ul>
+                <li>Engenharia de Computação - UNIVESP (em andamento)</li>
+            </ul>
+            <li><strong>Cursos</strong></li>
+            <ul>
+                <li>Python - Fundação Bradesco (Concluído)</li>
+                <li>Javascript - Curso em Vídeo (Concluído)</li>
+                <li>Inteligência Artificial Generativa - MIT e Santander Open Academy (Concluído)</li>
+                <li>HTML5 e CSS3 - Curso em Vídeo (Concluído)</li>
+                <li>Banco de Dados MySQL e SQLite - Curso em Vídeo (Concluído)</li>
+                <li>Banco de Dados e Business Intelligence - Data Science Academy (Concluído)</li>
+                <li>Privacidade e Proteção de Dados LGPD - SENAI (Concluído)</li>
+            </ul>
+            <li><strong>Idiomas</strong></li>
+            <ul>
+                <li>Português (Nativo)</li>
+                <li>Inglês (Intermediário)</li>
+                <li>Espanhol (Básico)</li>
+            </ul>
         </ul>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Ronaldo José da Silva Junior. Todos os direitos reservados.</p>
         <p>Desenvolvido com <span style="color: red;">&#10084;</span> por Ronaldo Junior</p>
         <p>
-        <a href="https://github.com/Dev-RonaldoJunior" target="_blank"><img src="github.png" alt="github"></a> 
-        <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Dev-RonaldoJunior" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
         </p>
     </footer>
 

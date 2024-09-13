@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiencias</title>
+    <title>Experiências</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icone-curriculos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Áudio de fundo -->
     <audio id="background-music" loop>
         <source src="success-celebration.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+
     <!-- Controles de áudio -->
     <div class="audio-controls">
-        <button id="play-pause" onclick="togglePlayPause()">Play</button>
+        <i id="play-pause" class="fa fa-play" onclick="togglePlayPause()"></i>
         <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
-        <label for="volume" id="volume">Volume</label>
+        <label for="volume" id="volume-txt">Volume</label>
+        <label for="volume" id="volume-label">100%</label> <!-- Label para mostrar a porcentagem -->
     </div>
 
+    <!-- Cabeçalho -->
     <header>
         <img src="ronaldo_junior.jpg" alt="Ronaldo José da Silva Junior" class="perfil-foto">
         <h1>Ronaldo José da Silva Junior</h1>
         <p>Engenheiro de Computação | Data Science | Desenvolvimento de Software</p>
     </header>
 
+    <!-- Menu de navegação -->
     <nav>
         <div class="menu-toggle" id="menu-toggle">
             <span class="bar"></span>
@@ -42,20 +48,32 @@
         </ul>
     </nav>
 
+    <!-- Seção de Experiência -->
     <section id="experiencia">
         <h2>Experiência</h2>
         <ul>
-            <li><strong>Estudante de Engenharia de Computação - UNIVESP</strong> (2020 - Presente)</li>
-            <li><strong>Analista de Dados - Projeto InsightGuard</strong> (2023)</li>
+            <li>
+                <strong>Estudante de Engenharia de Computação - UNIVESP</strong> (Atualmente)
+                <p>Adquirindo habilidades em linguagens de programação como Python e JavaScript, além de conhecimentos em Data Science e desenvolvimento de software.</p>
+            </li>
+            <li>
+                <strong>Analise de Dados - Projeto InsightGuard</strong> (2023)
+                <p>Responsável pela criação de um projeto de detecção de fraudes em transações financeiras, utilizando ferramentas como Python, Pandas e Seaborn em um ambiente de desenvolvimento controlado.</p>
+            </li>
         </ul>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Ronaldo José da Silva Junior. Todos os direitos reservados.</p>
         <p>Desenvolvido com <span style="color: red;">&#10084;</span> por Ronaldo Junior</p>
         <p>
-        <a href="https://github.com/Dev-RonaldoJunior" target="_blank"><img src="github.png" alt="github"></a> 
-        <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Dev-RonaldoJunior" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
         </p>
     </footer>
 

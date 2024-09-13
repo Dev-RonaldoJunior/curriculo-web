@@ -6,27 +6,33 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icone-curriculos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Áudio de fundo -->
     <audio id="background-music" loop>
         <source src="success-celebration.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+
     <!-- Controles de áudio -->
     <div class="audio-controls">
-        <button id="play-pause" onclick="togglePlayPause()">Play</button>
+        <i id="play-pause" class="fa fa-play" onclick="togglePlayPause()"></i>
         <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
-        <label for="volume" id="volume">Volume</label>
+        <label for="volume" id="volume-txt">Volume</label>
+        <label for="volume" id="volume-label">100%</label> <!-- Label para mostrar a porcentagem -->
     </div>
 
+    <!-- Cabeçalho -->
     <header>
         <img src="ronaldo_junior.jpg" alt="Ronaldo José da Silva Junior" class="perfil-foto">
         <h1>Ronaldo José da Silva Junior</h1>
         <p>Engenheiro de Computação | Data Science | Desenvolvimento de Software</p>
     </header>
 
+    <!-- Menu de navegação -->
     <nav>
         <div class="menu-toggle" id="menu-toggle">
             <span class="bar"></span>
@@ -42,25 +48,34 @@
         </ul>
     </nav>
     
+    <!-- Seção Sobre Mim -->
     <section id="perfil">
-        <h2>Sobre mim</h2>
-    
-        <p>
-            💬 Tenho 31 anos e atualmente moro no Brasil. Estou no último ano da faculdade e minha intenção é conseguir um estágio na área para desenvolver minhas habilidades. Desde jovem sou apaixonado pelo mundo da tecnologia. Por um tempo, criei conteúdo em plataformas como YouTube e Twitch, o que me ajudou a desenvolver habilidades importantes como criatividade, comunicação, marketing, capacidade analítica, gestão de comunidades e gestão de mídias sociais.
-        </p>
+        <h2>Sobre Mim</h2>
 
         <p>
-            ⚡ Gosto de ler, seja um bom livro, mangá ou quadrinhos, além de assistir filmes e jogar! Acredito que nossos interesses pessoais contribuem para uma percepção mais apurada das coisas e para a resolução de problemas.
+            Olá, tenho 31 anos, atualmente moro em Carapicuíba - SP e estou me formado em Engenharia de Computação pela UNIVESP. Estou em transição de carreira da área de mecânica automotiva para o campo de Tecnologia da Informação. Tenho conhecimentos em Python, JavaScript, HTML e CSS e estou desenvolvendo projetos focados em Análise de Dados, Segurança da Informação e Desenvolvimento de Software. Com uma forte paixão por aprender e resolver problemas, estou em busca de oportunidades como desenvolvedor de software ou cientista de dados para aplicar e expandir minhas habilidades técnicas.
+        </p>
+        <br>
+        <p>
+            Meus projetos, como o InsightGuard, voltado para a detecção de fraudes financeiras, mostram minha capacidade de lidar com dados, implementar soluções eficazes e colaborar com equipes para alcançar resultados. Além disso, mantenho todos os meus projetos em um repositório no GitHub para contribuir com a comunidade e demonstrar minha evolução constante.
+        </p>
+        <br>
+        <p>
+            No momento, estou em busca de um estágio ou posição de nível júnior que me permita continuar crescendo e aplicando meu conhecimento na prática, com foco em entregar valor real para a equipe e os clientes.
         </p>
     </section>
-    
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Ronaldo José da Silva Junior. Todos os direitos reservados.</p>
         <p>Desenvolvido com <span style="color: red;">&#10084;</span> por Ronaldo Junior</p>
         <p>
-        <a href="https://github.com/Dev-RonaldoJunior" target="_blank"><img src="github.png" alt="github"></a> 
-        <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Dev-RonaldoJunior" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/dev-ronaldojunior/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
         </p>
     </footer>
 

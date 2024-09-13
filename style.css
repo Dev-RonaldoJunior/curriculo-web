@@ -210,9 +210,17 @@ footer a {
     cursor: pointer;
 }
 
-#volume{
+.audio-controls i {
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+#volume-txt, #volume-label, #play-pause{
     color: white;
     font-size:  15px;
+    padding: 3px;
 
 }
 
